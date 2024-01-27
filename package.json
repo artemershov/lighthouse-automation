@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "lighthouse": "^11.3.0",
+    "minimist": "^1.2.8"
+  },
+  "scripts": {
+    "test": "node scripts/lighthouse.mjs",
+    "diff": "node scripts/diff.mjs",
+    "compare": "node scripts/compare.mjs"
+  },
+  "private": true
+}
