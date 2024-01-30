@@ -8,7 +8,7 @@ const defaultParams = {
   u: "http://localhost:3000",
   o: "result.json",
   c: 5,
-  t: 5000,
+  t: 5,
 };
 
 const params = minimist(process.argv.slice(2));
@@ -55,7 +55,7 @@ const loopMesurement = async (isDesktop) => {
     console.log(`${isDesktop ? "Desktop" : "Mobile"} iteration`, i);
     const result = await getMetrics(isDesktop);
     data.push(result);
-    await new Promise((res) => setTimeout(res, TIMEOUT));
+    await new Promise((res) => setTimeout(res, TIMEOUT * 1000));
   }
 
   return data;

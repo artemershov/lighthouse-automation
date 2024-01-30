@@ -3,7 +3,7 @@ import { spawnSync } from "child_process";
 
 const defaultParams = {
   c: 5,
-  t: 5000,
+  t: 5,
   d: ".",
 };
 

@@ -5,7 +5,7 @@
 Run automation tests to get average and median metrics values.
 
 ```sh
-$ yarn test -u http://localhost:3000 -c 5 -t 5000 -o result.json
+$ yarn test -u http://localhost:3000 -c 5 -t 5 -o result.json
 ```
 
 **Params**
@@ -14,7 +14,7 @@ $ yarn test -u http://localhost:3000 -c 5 -t 5000 -o result.json
 | ----- | ----------- | ------------------------------------------------------------------- |
 | `-u`  | `--url`     | Url to test. Default is `http://localhost:3000`                     |
 | `-c`  | `--count`   | Number of iterations. Default is `5`                                |
-| `-t`  | `--timeout` | Interval between iterations in ms. Default is `5000`                |
+| `-t`  | `--timeout` | Interval between iterations in seconds. Default is `5`              |
 | `-o`  | `--output`  | File path where the results will be saved. Default is `result.json` |
 
 ### Diff
@@ -48,7 +48,7 @@ $ yarn compare -b http://localhost:3000/pageA -a http://localhost:3000/pageB -d 
 | `-b`  | `--before`  | Url to test. `Required`                                               |
 | `-a`  | `--after`   | Url to test. `Required`                                               |
 | `-c`  | `--count`   | Number of iterations. Default is `5`                                  |
-| `-t`  | `--timeout` | Interval between iterations in ms. Default is `5000`                  |
+| `-t`  | `--timeout` | Interval between iterations in seconds. Default is `5`                |
 | `-d`  | `--dir`     | Directory where the files will be saved. Default is current directory |
 
 ### Example
