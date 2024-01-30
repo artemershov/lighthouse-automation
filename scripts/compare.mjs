@@ -34,7 +34,7 @@ const spawnProcess = (command, args) =>
 spawnProcess("mkdir", ["-p", OUTPUT_DIR]);
 
 spawnProcess("node", [
-  "lighthouse.mjs",
+  "scripts/lighthouse.mjs",
   "-c",
   COUNT,
   "-t",
@@ -46,7 +46,7 @@ spawnProcess("node", [
 ]);
 
 spawnProcess("node", [
-  "lighthouse.mjs",
+  "scripts/lighthouse.mjs",
   "-c",
   COUNT,
   "-t",
@@ -58,7 +58,7 @@ spawnProcess("node", [
 ]);
 
 spawnProcess("node", [
-  "diff.mjs",
+  "scripts/diff.mjs",
   "-b",
   beforeResultsPath,
   "-a",
